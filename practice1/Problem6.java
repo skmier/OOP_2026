@@ -1,4 +1,4 @@
-package OOP_2026.practice.practice1;
+package practice1;
 
 import java.util.Scanner;
 
