@@ -15,8 +15,8 @@ public class Problem4 {
             float x = (float) (-b / (2 * a));
             System.out.println(x);
         } else {
-            float x1 = (float) ((-b + Math.sqrt(D)) / (2 * a));
-            float x2 = (float) ((-b - Math.sqrt(D)) / (2 * a));
+            float x1 = (float) ((-1 * b + Math.sqrt(D)) / (2 * a));
+            float x2 = (float) ((-1 * b - Math.sqrt(D)) / (2 * a));
             System.out.println("X1 is " +  x1 + "\n" + "X2 is: " + x2);
         }
         scan.close();
