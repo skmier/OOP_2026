@@ -7,15 +7,16 @@ public class StarTriangle {
         this.width = width;
     }
 
+    @Override
     public String toString(){
-        StringBuilder star = new StringBuilder();
+        String star = "";
         for (int i = 0; i <= width; ++i){
             for(int j = 0; j < i; ++j){
-                star.append("[*]");
+               star += "[*]";
             }
-            star.append("\n");
+            star += "\n";
         }
-        return star.toString();
+        return star;
     }
 
 
