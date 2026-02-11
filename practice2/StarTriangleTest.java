@@ -5,5 +5,4 @@ public class StarTriangleTest {
         StarTriangle s1 = new StarTriangle(4);
         System.out.println(s1.toString());
     }
-
 }

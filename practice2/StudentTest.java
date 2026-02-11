@@ -12,6 +12,5 @@ public class StudentTest {
         Student s2 = new Student("Sak","25B03");
         System.out.println("Name: " + s2.getName() + " ID: " + s2.getId());
         System.out.println("Year of Study: " + s2.getYearOfStudy());
-
     }
 }
