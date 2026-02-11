@@ -3,14 +3,9 @@ package practice2;
 public class Student {
     private String name;
     private String id;
-    private int yearOfStudy;
+    private int yearOfStudy = 2025;
 
     private static int yearCnt;
-
-    {
-        yearCnt++;
-        this.yearOfStudy = 2026 + yearCnt;
-    }
 
     Student(String name, String id){
         this.name = name;
@@ -35,5 +30,10 @@ public class Student {
 
     public int getYearOfStudy(){
         return yearOfStudy;
+    }
+
+    public void incrementYear(){
+        yearCnt++;
+        this.yearOfStudy += yearCnt;
     }
 }
