@@ -32,6 +32,7 @@ public class Student {
         return yearOfStudy;
     }
 
+
     public void incrementYear(){
         yearCnt++;
         this.yearOfStudy += yearCnt;
