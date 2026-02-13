@@ -4,8 +4,25 @@ public class Student {
     private String name;
     private String id;
     private int yearOfStudy = 2025;
-
     private static int yearCnt;
+
+    private double grade; // for lab1
+    private static int idCnt = 0;
+
+    {
+        idCnt++;
+        this.id = idCnt + "";
+    }
+
+
+    public Student(double grade){
+        this.grade = grade;
+    }
+
+    public Student(String name, double grade){
+        this.name = name;
+        this.grade = grade;
+    }
 
     Student(String name, String id){
         this.name = name;
@@ -36,5 +53,18 @@ public class Student {
     public void incrementYear(){
         yearCnt++;
         this.yearOfStudy += yearCnt;
+    }
+
+    public double getGrade() {
+        return grade;
+    }
+
+    public void setGrade(double grade){
+        this.grade = grade;
+    }
+
+    @Override
+    public String toString() {
+        return grade + " (Student " + name + ", id: " + id + ")";
     }
 }

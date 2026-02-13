@@ -7,7 +7,7 @@ public class Data {
 
     public void addValue(int value){
         count++;
-        sum+= value;
+        sum += value;
         if(value > maximum){
             maximum = value;
         }
