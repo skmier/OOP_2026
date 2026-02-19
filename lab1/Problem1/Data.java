@@ -13,14 +13,14 @@ public class Data {
         }
     }
 
-    public Double avg(){
+    public double avg(){
         if(count == 0 || sum == 0){
             return 0.0;
         }
         return sum / count;
     }
 
-    public Double getMax(){
+    public double getMax(){
         if(count == 0){
             return 0.0;
         }

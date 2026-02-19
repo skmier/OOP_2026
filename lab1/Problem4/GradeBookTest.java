@@ -23,5 +23,7 @@ public class GradeBookTest {
         scanner.close();
 
         g1.displayGradeReport();
+
+        g1.outputBarChart();
     }
 }
