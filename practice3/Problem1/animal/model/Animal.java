@@ -12,11 +12,11 @@ public abstract class Animal {
     public abstract void makeSound();
 
     public void eat(){
-        System.out.println(name + " is eating");
+        System.out.println(this.name + " is eating");
     }
 
     public void eat(String food){
-        System.out.println(name + " is eating " + food);
+        System.out.println(this.name  + " is eating " + food);
     }
 
     public void getInfo(){

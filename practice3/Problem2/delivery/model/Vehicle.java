@@ -11,9 +11,13 @@ public abstract class Vehicle {
         this.engine = engine;
     }
 
-    public abstract double calculateDeliveryCost();
+    public double calculateDeliveryCost(){
+        return this.baseCost * 1.2;
+    }
 
-    public abstract String getVehicleInfo();
+    public String getVehicleInfo(){
+        return "Model: " + model + " Base cost: " + baseCost + " Engine: " + engine ;
+    }
 
     public String getModel() {
         return model;

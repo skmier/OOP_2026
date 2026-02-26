@@ -14,17 +14,20 @@ public class MainApp {
         Car c1 = new Car("Toyota", 5000, new Engine("v8",220),5);
         Truck t1 = new Truck("Volvo", 10000, new Engine("v12",500), 500);
 
-        List<Vehicle> vehicleList = new ArrayList<Vehicle>();
+        List<Vehicle> vehicleList = new ArrayList<>();
         vehicleList.add(c1);
         vehicleList.add(t1);
 
+        System.out.println("Vehicles:");
         DeliveryService deliveryService = new DeliveryService();
         deliveryService.printAllVehicles(vehicleList);
         System.out.println();
+
+        System.out.println("All Deliveries");
         deliveryService.calculateAllDeliveries(vehicleList);
+
         System.out.println();
         deliveryService.calculateTotalCost(vehicleList);
     }
-
 
 }

@@ -10,11 +10,11 @@ public class Truck extends Vehicle {
 
     @Override
     public double calculateDeliveryCost() {
-        return getBaseCost() * maxLoad;
+        return getBaseCost() + (maxLoad * 2);
     }
 
     public double calculateDeliveryCost(double distance, double fuelPrice) {
-        return getBaseCost() * maxLoad * distance + fuelPrice;
+        return getBaseCost() + (maxLoad * 2) + (distance * fuelPrice);
     }
 
     @Override

@@ -9,7 +9,6 @@ public class GradeBook {
     private Course course;
     private List<Student> students = new ArrayList<>();
 
-
     private double total = 0;
 
     public void addStudent(String name, double grade) {

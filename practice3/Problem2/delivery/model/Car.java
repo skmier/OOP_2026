@@ -10,15 +10,15 @@ public class Car extends Vehicle {
 
     @Override
     public double calculateDeliveryCost() {
-        return getBaseCost() * numberOfSeats;
+        return getBaseCost() + (numberOfSeats * 60 );
+
+    }
+    public double calculateDeliveryCost(double extraWeight) {
+        return getBaseCost() * ( numberOfSeats * 60 ) + (extraWeight * 4);
     }
 
     @Override
     public String getVehicleInfo() {
         return "Model : " + getModel() + " Base cost " + getBaseCost() + " Engine " + getEngine() + " Number Of seats : " + numberOfSeats;
-    }
-
-    public double calculateDeliveryCost(double extraweight) {
-        return getBaseCost() * numberOfSeats + extraweight;
     }
 }
