@@ -9,7 +9,9 @@ public abstract class Animal {
         this.name = name;
     }
 
-    public abstract void makeSound();
+    public void makeSound(){
+        System.out.println();
+    }
 
     public void eat(){
         System.out.println(this.name + " is eating");
