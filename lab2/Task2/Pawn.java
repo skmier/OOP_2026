@@ -1,0 +1,24 @@
+package lab2.Task2;
+
+public class Pawn extends Piece{
+
+    private final String symbol = "♙";
+
+    public String getSymbol() {
+        return symbol;
+    }
+
+    public Pawn(Position a) {
+        super(a);
+    }
+
+    @Override
+    public boolean isLegalMove(Position b) {
+        if((b.getCol() < 1 || b.getCol() > 8) || (b.getRow() > 8 || b.getRow() < 1) ) return false;
+
+        int rowDiff = b.getRow() - a.getRow();
+        int colDiff = b.getCol() - a.getCol();
+
+        return colDiff == 0 && rowDiff == 1;
+    }
+}
