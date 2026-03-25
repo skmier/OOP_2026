@@ -16,6 +16,6 @@ public class Dog extends Animal{
     @Override
     public void getInfo(){
         super.getInfo();
-        System.out.print(" Breed is: " + breed);
+        System.out.print("Breed is: " + breed);
     }
 }

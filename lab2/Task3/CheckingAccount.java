@@ -14,7 +14,7 @@ public class CheckingAccount extends Account {
                 balance -= 0.02;
             }
             else {
-                System.out.println("[ERROR limit free transactions]");
+                System.out.println("You still have free transactions");
             }
         }
     }
