@@ -1,7 +1,5 @@
 package practice4.Problem2;
 
-import javax.swing.plaf.synth.SynthTabbedPaneUI;
-
 public class Cat implements CanHavePizza{
     private String name;
     private int age;
