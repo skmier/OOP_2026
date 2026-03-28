@@ -9,6 +9,6 @@ public class CarTest {
         System.out.println(bmw.getModel() + "`s vin number is " + bmw.getVinNumber());
 
         toyotaTundra.displayMachineCharacteristics(toyotaTundra.getModel(), toyotaTundra.getYear(), toyotaTundra.getSpeed());
-        toyotaTundra.timeTraveled(bmw.getSpeed(), 400, bmw.getModel());
+        toyotaTundra.timeTraveled(toyotaTundra.getSpeed(), 400, toyotaTundra.getModel());
     }
 }
